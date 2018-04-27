@@ -11,7 +11,7 @@
 <body>
 		
   <div class="container">
-    <form method="POST" action="">
+    <form method="POST" action="controller/UsuarioController.php">
     <h2><center>INICIO DE SESION</center></h2>
     <br><br><br>
       <div class="row" id="datos">

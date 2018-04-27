@@ -1,6 +1,6 @@
 <?php 
-	
-	require_once'../controller/FacturaController.php';
+	require_once'../model/Usuario.php';
+	require_once'../controller/UsuarioController.php';
  ?>
  <!DOCTYPE html>
  <html>
@@ -28,8 +28,9 @@
  		</thead>
  		<tbody>
  			<?php 
- 				$objUser = new Factura();
- 				/*$data=$objUser->getAll();
+ 				$objUser = new Usuario();
+ 				$objFac = new Factura();
+ 				$data=$objUser->getAll();
 
  				foreach ($data as $value) {
  					echo "<tr>
@@ -39,7 +40,7 @@
 							<td>".$value['fechaRegistroSistema']."</td>
 							<td>".$value['fechaModificacionSistema']."</td>
  						  </tr>";
- 				}*/
+ 				}
  			 ?>
  		</tbody>
  	</table>
