@@ -53,7 +53,7 @@ if(isset($_POST["tipo"]))
 			echo 'Error';
 			break;
 	}
-}
+
 
 function Consultar()
 {
@@ -118,7 +118,7 @@ function Registrar()
 		echo "Insertado";
 	    } else{
 		echo "Error";
-	    }
+	    } 
 	}
 }
 

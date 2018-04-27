@@ -1,7 +1,6 @@
 <?php
 
  require_once "Conexion.php";
- require_once "../app/validacionGeneral.php"; 
 
  class Usuario extends Conexion{
 
@@ -221,11 +220,10 @@
 						</tr>';
 				}
 
+				}
 
-
-
-
-
+			}
+		}
  }
 
 

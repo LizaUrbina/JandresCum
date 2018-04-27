@@ -7,14 +7,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CRUD Shido</title>
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/registrar.js"></script>
-	<script src="../js/botones.js"></script>
-	<script src="../js/eliminar.js"></script>
-	<script src="../js/editar.js"></script>
+	<link rel="stylesheet" href="../plugins/css/bootstrap.css">
+	<link rel="stylesheet" href="../plugins/css/style.css">
+	<script src="../plugins/plugins/js/jquery.js"></script>
+	<script src="../plugins/js/bootstrap.min.js"></script>
+	<script src="../plugins/js/registrar.js"></script>
+	<script src="../plugins/js/botones.js"></script>
+	<script src="../plugins/js/eliminar.js"></script>
+	<script src="../plugins/js/editar.js"></script>
 </head>
 <body>
 	<!-- CÓDIGO MODALES  -->
