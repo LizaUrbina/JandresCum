@@ -3,14 +3,14 @@
 	<meta charset="utf-8">
 	<title>Login</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
- 
+    <link rel="stylesheet" href="plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/css/style.css">
+    <script src="plugins/js/jquery.js"></script>
+    <script src="plugins/js/bootstrap.min.js"></script>
 </head>
 <body>
 		
-  <div class="container">
+  <div class="contenedor">
     <form method="POST" action="controller/UsuarioController.php">
     <h2><center>INICIO DE SESION</center></h2>
     <br><br><br>
