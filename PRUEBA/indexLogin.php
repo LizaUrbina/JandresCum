@@ -27,8 +27,8 @@
 			</tr>
 		</table>
 	</form>
-	<br>
-	<a style="color:skyeblue;" href="views/registroUsuario.php">Desea crear una cuenta?</a>
+	<!-- <br>
+	<a style="color:skyeblue;" href="views/registroUsuario.php">Desea crear una cuenta?</a>-->
 	</center>
 	
 </body>
