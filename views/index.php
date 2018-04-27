@@ -19,11 +19,11 @@
  	<table id="listado" class="mdl-data-table" cellspacing="1" width="100%">
  		<thead>
  			
- 			<th>$id;</th>
-  			<th>$codigo</th> 
-  			<th>$fecha</th> 
-  			<th>$fechaRegistroSistema</th> 
-  			<th>$fechaModificacionSistema</th> 
+ 			<th>id</th>
+  			<th>codigo</th> 
+  			<th>fecha</th> 
+  			<th>fechaRegistroSistema</th> 
+  			<th>fechaModificacionSistema</th> 
   			
  		</thead>
  		<tbody>
