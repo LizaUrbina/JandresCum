@@ -3,6 +3,8 @@
  require_once "../model/Usuario.php";
  require_once "../app/validacionGeneral.php"; 
 
+
+
  if(isset($_POST['Login']))
  {
  	login();
@@ -100,7 +102,7 @@ function Eliminar()
 function Registrar()
 {
 	$datos = new Usuario();
-		if((isset($_POST["usuarioRegistrar"])) && (isset($_POST["passwordRegistrar"])) && (isset($_POST["estadoRegistrar"]) && (isset($_POST["rolRegistrar"]))
+		if((isset($_POST["usuarioRegistrar"])) && (isset($_POST["passwordRegistrar"])) && (isset($_POST["estadoRegistrar"])) && (isset($_POST["rolRegistrar"])))
 	{
 		$Usuario = $_POST["usuarioRegistrar"];
 		$password = $_POST["passwordRegistrar"];
@@ -121,6 +123,7 @@ function Registrar()
 	    }
 	}
 }
+
 
 
 
