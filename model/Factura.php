@@ -37,7 +37,7 @@
 		{
 			return $this->fecha;
 		}
-		public function set($fecha)
+		public function setFechaRegistro($fecha)
 		{
 			$this->fecha=$fecha;
 		}
@@ -45,15 +45,15 @@
 		{
 			return $this->fechaRegistroSistema;
 		}
-		public function set($fechaRegistroSistema)
+		public function setFechaModificacion($fechaRegistroSistema)
 		{
 			$this->fechaRegistroSistema=$fechaRegistroSistema;
 		}
-		public function getFechaModificacion()
+		public function getFechaModi()
 		{
 			return $this->fechaModificacionSistema;
 		}
-		public function set($fechaModificacionSistema)
+		public function setFechaModi($fechaModificacionSistema)
 		{
 			$this->fechaModificacionSistema=$fechaModificacionSistema;
 		}
