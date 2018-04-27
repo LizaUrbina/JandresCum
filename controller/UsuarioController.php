@@ -1,5 +1,5 @@
 <?php 
-require_once'../model/Factura.php';
+require_once'../model/Usuario.php';
 	if (isset($_POST['login'])) {
 		login();
 	}

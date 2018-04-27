@@ -57,9 +57,18 @@
 		{
 			$this->fechaModificacionSistema=$fechaModificacionSistema;
 		}
-		public function generatePassword($password){
-		$passEnco= sha1($password);
-		return $passEnco;
+		
+		public function getAll()
+	{
+		$con=$this->conectar();
+		
+		$info=$con->query($sql);
+		if ($info->num_rows>0) {
+			$data=$info;
+		}else{
+			$data= null;
+		}
+		return $data;
 	}
 
 
