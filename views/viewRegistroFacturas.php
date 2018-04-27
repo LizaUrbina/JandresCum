@@ -38,8 +38,32 @@
 			</form>
 		</div>
 		<p class="h3">Detalle de Factura</p>
-		<form action="" id="frmDetalle">
-				
+		<form action="" id="frmDetalle" class="form-inline">
+			<table class="table" id="table-detalle">
+				<tr id="row-1">
+					<td>
+						<div class="form-group">
+							<label for="cant">Cantidad:</label>
+							<input type="text" id="cant" name="cant" class="form-control">
+						</div>
+					</td>
+					<td>
+						<div class="form-group">
+							<label for="">Precio:</label>
+							<input type="text" id="precio" name="precio" class="form-control">
+						</div>
+					</td>
+					<td>
+						<div class="form-group">
+							<label for="">Nombre del Producto:</label>
+							<input type="text" id="nomProducto" name="nomProducto" class="form-control">
+						</div>
+					</td>
+					<td>
+						<button type="text" id="btnDetalle" name="btnDetalle" class="btn btn-primary">Registrar</button>
+					</td>
+				</tr>
+			</table>
 		</form>
 	</div>
 </body>
