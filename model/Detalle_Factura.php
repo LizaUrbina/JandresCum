@@ -72,4 +72,10 @@ class Detalle_Factura
 
         return $this;
     }
+
+    public function regDetalleFactura()
+    {
+        $_query = "select max(id) as id from factura";
+        $resultado $this-
+    }
 }
