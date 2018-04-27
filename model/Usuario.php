@@ -78,6 +78,7 @@ class Usuario extends Conexion
 				else
 				{
 					header('Location: ../indexLogin.php');
+					//comentario
 				}
 	}
 }
