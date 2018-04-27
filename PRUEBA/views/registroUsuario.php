@@ -25,7 +25,7 @@
 			<tr>
 				<td><label>Tipo usuario</label></td>
 				<td><input type="radio" name="rol" value="1">ADMIN
-					<input type="radio" name="rol" value="2">CLIENTE</td>
+					<input type="radio" name="rol" value="2">USUARIO</td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" name="Registrar" value="Registrar"></td>

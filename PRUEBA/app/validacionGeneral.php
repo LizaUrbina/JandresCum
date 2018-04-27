@@ -2,7 +2,7 @@
 
  session_start();
 
- if($_SESSION['ROL']=="ADMIN" || $_SESSION['ROL']=="CLIENTE")
+ if($_SESSION['ROL']=="ADMIN" || $_SESSION['ROL']=="USUARIO")
  {
 
  }

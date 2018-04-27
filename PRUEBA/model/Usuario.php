@@ -87,7 +87,7 @@
 	  			{
 	  				header("Location:../views/indexAdmin.php");	
 	  			}
-	  			else if($data['rol']=="CLIENTE")
+	  			else if($data['rol']=="USUARIO")
 	  			{
 	  				header("Location:../views/indexCliente.php");
 	  			}
