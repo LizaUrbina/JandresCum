@@ -3,7 +3,7 @@ $(document).ready(function() {
 		var datos = $('#frmEditar').serialize();
 		$.ajax({
 			type: 'POST',
-			url: '../controller/AutomovilController.php',
+			url: '../controller/ControllerUsuario.php',
 			data: datos,
 			success: function(r)
 			{

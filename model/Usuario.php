@@ -96,7 +96,7 @@
 	  			{
 	  				header("Location:../views/indexAdmin.php");	
 	  			}
-	  			else if($data['rol']=="USUARIO")
+	  			else if($data['rol']=="CLIENTE")
 	  			{
 	  				header("Location:../views/indexCliente.php");
 	  			}
@@ -104,12 +104,12 @@
 	  		}
 	  		else
 	  		{
-	  			header("Location:../indexLogin.php");
+	  			header("Location:../index.php");
 	  		}
 	  	}
 	  	else
 	  	{
-	  		header("Location:../indexLogin.php");
+	  		header("Location:../index.php");
 	  	}
 
 	  }
@@ -124,7 +124,7 @@
 	  	 if($info)
 	  	 {
 	  	 	echo "<h2>Error al crear cuenta</h2>";
-	  	 	header("Location:../indexLogin.php");
+	  	 	header("Location:../index.php");
 	  	 }
 
 	  }
@@ -219,25 +219,10 @@
 							</td>
 						</tr>';
 				}
-
-				}
-
-<<<<<<< HEAD
 			}
 		}
- }
-
-=======
->>>>>>> 3d64beedeb5b76e73489ff58be994521eb7cbc65
-
-
-
-
-<<<<<<< HEAD
-=======
- 			}
 	}
 }
-}
->>>>>>> 3d64beedeb5b76e73489ff58be994521eb7cbc65
+
+
 ?>

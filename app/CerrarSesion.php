@@ -2,7 +2,7 @@
  
  session_start();
  session_destroy();
- header("Location:../indexLogin.php");
+ header("Location:../index.php");
 
 
 

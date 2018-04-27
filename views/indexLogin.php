@@ -16,7 +16,7 @@
 
 	<br>
 
-	<form action="controller/ControllerUsuario.php" method="POST">
+	<form action="../controller/ControllerUsuario.php" method="POST">
 		<center>
 			<br>
 		<table>

@@ -34,9 +34,9 @@
  	
  }
 
-if(isset($_POST["tipo"]))
+if(isset($_POST['tipo']))
 {
-	$tipo = $_POST["tipo"];
+	$tipo = $_POST['tipo'];
 	switch ($tipo) {
 		case 'eliminar':
 			Eliminar();
@@ -55,12 +55,13 @@ if(isset($_POST["tipo"]))
 			echo 'Error';
 			break;
 	}
+	}
 
 
 function Consultar()
 {
 	$datos = new Usuario();
-	$datos->setId($_POST["idEditar"]);
+	$datos->setId($_POST['idEditar']);
 
 	$resultado = $datos->consultarUsuario();
 
@@ -70,11 +71,11 @@ function Consultar()
 function Editar()
 {
 	$datos = new Usuario();
-	$datos->setId($_POST["idEditar"]);
-	$datos->setUsuario($_POST["usuarioEditar"]);
-	$datos->setPassword($_POST["passwordEditar"]);
-	$datos->setEstado($_POST["estadoEditar"]);
-	$datos->setRol($_POST["rolEditar"]);
+	$datos->setId($_POST['idEditar']);
+	$datos->setUsuario($_POST['usuarioEditar']);
+	$datos->setPassword($_POST['passwordEditar']);
+	$datos->setEstado($_POST['estadoEditar']);
+	$datos->setRol($_POST['rolEditar']);
 	$resultado = $datos->editarUsuario();
 
 	if($resultado)
@@ -88,7 +89,7 @@ function Editar()
 function Eliminar()
 {
 	$datos = new Usuario();
-	$datos->setId(intval($_POST["idEliminar"]));
+	$datos->setId(intval($_POST['idEliminar']));
 	$resultado = $datos->EliminarUsuario();
 
 	if($resultado)
@@ -102,14 +103,15 @@ function Eliminar()
 function Registrar()
 {
 	$datos = new Usuario();
-		if((isset($_POST["usuarioRegistrar"])) && (isset($_POST["passwordRegistrar"])) && (isset($_POST["estadoRegistrar"])) && (isset($_POST["rolRegistrar"])))
+		if((isset($_POST['usuarioRegistrar'])) && (isset($_POST['passwordRegistrar'])) && 
+			(isset($_POST['estadoRegistrar'])) && (isset($_POST['rolRegistrar'])))
 	{
-		$Usuario = $_POST["usuarioRegistrar"];
-		$password = $_POST["passwordRegistrar"];
-		$estado = $_POST["estadoRegistrar"];
-		$rol = $_POST["rolRegistrar"];
+		$usuario = $_POST['usuarioRegistrar'];
+		$password = $_POST['passwordRegistrar'];
+		$estado = $_POST['estadoRegistrar'];
+		$rol = $_POST['rolRegistrar'];
 
-		$datos->setUsuario($Usuario);
+		$datos->setUsuario($usuario);
 		$datos->setPassword($password);
 		$datos->setEstado($estado);
 		$datos->setRol($rol);
@@ -123,8 +125,5 @@ function Registrar()
 	    } 
 	}
 }
-
-
-
 
 ?>

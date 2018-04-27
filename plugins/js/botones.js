@@ -9,15 +9,16 @@ function Editar(id)
 
 	$.ajax({
 		type: 'POST',
-		url: '../controller/AutomovilController.php',
+		url: '../controller/ControllerUsuario.php',
 		data: 'tipo=consulta&idEditar='+id,
 		success: function(r)
 		{
 			var arreglo = $.parseJSON(r);
 
-			$('#marcaEditar').val(arreglo.marca);
-			$('#modeloEditar').val(arreglo.modelo);
-			$('#yearEditar').val(arreglo.anho);
+			$('#usuarioEditar').val(arreglo.usuario);
+			$('#passwordEditar').val(arreglo.password);
+			$('#estadoEditar').val(arreglo.estado);
+			$('#rolEditar').val(arreglo.rol);
 		}
 	});
 }
