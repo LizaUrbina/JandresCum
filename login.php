@@ -11,7 +11,7 @@
 <body>
 		
   <div class="container">
-    <form method="POST" action="verificacion.php">
+    <form method="POST" action="">
     <h2><center>INICIO DE SESION</center></h2>
     <br><br><br>
       <div class="row" id="datos">
