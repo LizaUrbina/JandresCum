@@ -13,7 +13,8 @@
 </head>
 <body>
 	<h2>Bienvenido <?php echo $_SESSION['USUARIO']?></h2>
-	<a href="indexCrud.php">crud</a>
+	<br><br>
+	<a href="indexCrud.php">crud</a><br><br>
 	
 	
 	<a href="../app/cerrarSesion.php">Cerrar Sesion</a>
