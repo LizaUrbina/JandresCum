@@ -1,8 +1,6 @@
 <?php 
-	require_once'../model/Usuario.php';
-	require_once'../model/Factura.php';
-    require_once "../controller/ControllerUsuario.php";
- ?>
+require_once '../model/Factura.php'
+?>
  <!DOCTYPE html>
  <html>
  <head>
@@ -20,6 +18,12 @@
 <div class="contenedor">
 	<p class="display-4">Facturas</p>
 	<br>
+  <hr>
+  <div class="barra-principal">
+      <p class="h3">Registros</p>
+      <a class="btn btn-primary" href="viewRegistroFacturas.php">Registrar</a>
+    </div>
+    <hr>
 	<table id="listado" class="table table-striped table-bordered" cellspacing="1" width="100%">
  		<thead>
   			<th>Código</th> 
@@ -30,7 +34,6 @@
  		</thead>
  		<tbody>
  			<?php 
- 				$objUser = new Usuario();
  				$objFac = new Factura();
  				// $data=$objUser->getAll();
 

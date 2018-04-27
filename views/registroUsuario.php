@@ -8,42 +8,53 @@
 	<meta charset="UTF-8">
 	<title>Registro usuario</title>
 	<link rel="stylesheet" type="text/css" href="../plugins/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../plugins/css/miestilo.css">
+	<link rel="stylesheet" href="../plugins/css/style.css">
+	   <script src="../plugins/js/jquery.js"></script>
+    <script src="../plugins/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-
-<div class="container col-md-4" style="margin-top: 15%; border-color: black;">
-			<div class="row">
-				<div class="cuadro">
-					<form action="../controller/ControllerUsuario.php" method="POST">	
-							<div class="form-group">
-								<label>Nombre usuario</label>
-								<input type="text" name="user" placeholder="User" class="form-control">
-							</div>
-							<div class="form-group">
-									<label>Password</label>
-									<input type="password" name="pass" placeholder="Password" class="form-control">
-							</div>
-							<div class="form-group">
-										<input type="hidden" name="estado" value="1">
-							</div>
-							<div class="form-group">
-									<label>Tipo usuario</label>
-									<input type="radio" name="rol" value="1">ADMIN
-									<input type="radio" name="rol" value="2">CLIENTE
-							</div>
-							<div class="form-group">
-									<input type="submit" name="Registrar" value="Registrar" class="btn btn-success">	
-							</div>
-					</form>
-						
+	<div class="contenedor">
+		<h4 class="display-4">
+			Registro
+		</h4>
+		<div class="contenedor-interno">
+			<form id="frmLogin" action="../controller/ControllerUsuario.php" method="POST">
+				<div class="form-row">
+					<div class="form-column col-md-12">
+						<div class="form-group">
+							<label for="">Nombre de Usuario:</label>
+	        				<input type="text" class="form-control" name="user" id="user">
+						</div>
+					</div>
 				</div>
-			</div>
-			
-
+				<div class="form-row">
+					<div class="form-column col-md-12">
+						<div class="form-group">
+							<label for="">Tipo de Usuario:</label>
+	        				<select type="text" class="form-control" name="TipoUser" id="TipoUser">
+								<option value="-">Seleccionar...</option>
+	        					<option value="1">Administrador</option>
+	        					<option value="2">Usuario</option>
+	        				</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-column col-md-12">
+						<div class="form-group">
+							<label for="">Contraseña:</label>
+	        				<input type="password" class="form-control" name="pass" id="pass">
+						</div>
+					</div>
+				</div>
+				<input type="hidden" id="tipo" name="tipo" value="registro">
+				<div class="form-row">
+					<div class="form-column col-md-12">
+						<button class="btn btn-success" id="btnRegistro">Registrarse</button>
+					</div>
+				</div>
+			</form>
 		</div>
-
-
+	</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
 
- require_once "../app/validacionGeneral.php";
+ // require_once "../app/validacionGeneral.php";
 
 	class Conexion{
 
@@ -20,7 +20,7 @@
 
 		public function conectar()
 		{
-			$con= new mysqli($this->host,$this->user,$this->password,$this->database);
+			$con = new mysqli($this->host,$this->user,$this->password,$this->database);
 
 			if(mysqli_connect_errno())
 			{
