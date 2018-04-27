@@ -15,7 +15,7 @@
 		
 		function __construct()
 		{
-			parent:: __construct;
+			parent:: __construct();
 		}
 		public function getId()
 		{
@@ -29,7 +29,7 @@
 		{
 			return $this->codigo;
 		}
-		public function set($codigo)
+		public function setFecha($codigo)
 		{
 			$this->codigo=$codigo;
 		}
@@ -63,18 +63,5 @@
 	}
 
 
-
-	public function getAll()
-	{
-		$con=$this->conectar();
-		$sql="SELECT * FROM usuario u WHERE u.estado=1";
-		$info=$con->query($sql);
-		if ($info->num_rows>0) {
-			$data=$info;
-		}else{
-			$data= null;
-		}
-		return $data;
-	}
 }
  ?>
