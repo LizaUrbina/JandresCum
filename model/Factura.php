@@ -4,7 +4,7 @@
 	/**
 	* 
 	*/
-	class Factura 
+	class Factura extends Conexion
 	{
 		private $id;
   		private $codigo;
