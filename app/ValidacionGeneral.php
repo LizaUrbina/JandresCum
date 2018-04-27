@@ -1,9 +1,18 @@
 <?php 
-	session_start();
-	if ($_SESSION['ROL']=="Administrador") {
-	
-	}else
-	{
-		header("Location: ../login.php");
-	}
-	 ?>
+
+ session_start();
+
+ if($_SESSION['ROL']=="ADMIN" || $_SESSION['ROL']=="USUARIO")
+ {
+
+ }
+ else
+ {
+ 	header("Location:../indexLogin.php");
+ }
+
+
+
+
+
+?>

@@ -1,36 +1,51 @@
 <?php 
 
-/**
-* 
-*/
-class Conexion
-{
-	private $host;
-	private $user;
-	private $password;
-	private $database;
-	
-	public function __construct()
-	{
-		$data = require_once '../app/config.php';
+ require_once "../app/validacionGeneral.php";
 
-		$this->host = $data['host'];
-		$this->user = $data['user'];
-		$this->password = $data['pass'];
-		$this->database = $data['db'];
-	}
+	class Conexion{
 
+		private $host;
+		private $user;
+		private $password;
+		private $database;
 
-	public function conectar()
-	{
-		$con = new mysqli($this->host,$this->user,$this->password,$this->database);
-
-		if ($con->connect_errno) {
-			echo "No se realizo la conexion, lo lamento ";
-			die();
+		public function __construct()
+		{
+			$data= require_once "../app/config.php";
+			$this->host=$data['host'];
+			$this->user=$data['user'];
+			$this->password=$data['password'];
+			$this->database=$data['database'];
 		}
-		return $con;
-	}
-}
 
- ?>
+		public function conectar()
+		{
+			$con= new mysqli($this->host,$this->user,$this->password,$this->database);
+
+			if(mysqli_connect_errno())
+			{
+				echo "Error al conectar";
+				die();
+			}
+
+			return $con;
+		}
+
+
+		public function ejecutar($sql)
+	    {
+		$resultado = $this->conectar()->query($sql);
+
+		return $resultado;
+	     }
+
+
+
+
+	}
+
+
+
+
+
+?>
